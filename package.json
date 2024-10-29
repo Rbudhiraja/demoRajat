@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Rbudhiraja/demoRajat#readme",
   "dependencies": {
+    "@playwright/test": "^1.48.2",
     "playwright": "^1.48.2"
   }
 }
