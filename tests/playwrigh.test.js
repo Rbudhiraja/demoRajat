@@ -1,4 +1,3 @@
-const { test, expect } = require('playright');
 const { chromium } = require('playwright');
 
 (async () => {

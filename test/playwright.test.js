@@ -1,5 +1,4 @@
-const { test, expect } = require('playright/test');
-const { chromium } = require('playwright/test');
+const { chromium } = require('playwright');
 
 (async () => {
   const browser = await chromium.launch({ headless: false });
