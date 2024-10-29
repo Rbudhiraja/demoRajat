@@ -1,10 +1,6 @@
-const { chromium } = require('playwright');
+const { test, expect } = require('@playwright/test');
 
-(async () => {
-  const browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
-  const page = await context.newPage();
-
+test('Navigate to Rossvideo and verify Careers page', async ({ page }) => {
   // Open Rossvideo.com
   await page.goto('https://www.rossvideo.com');
 
@@ -16,12 +12,10 @@ const { chromium } = require('playwright');
 
   // Wait for the careers page to load and validate the URL
   await page.waitForURL('**/careers');
-  if (page.url().includes('/careers')) {
-    console.log('Careers page is opened.');
-  } else {
-    console.error('Failed to open Careers page.');
-  }
+  
+  // Validate that the URL is correct
+  await expect(page).toHaveURL(/.*careers/); // This line asserts the URL matches the expected pattern
 
-  await browser.close();
-})();
+  console.log('Careers page is opened.');
+});
 
