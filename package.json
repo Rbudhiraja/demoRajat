@@ -1,0 +1,23 @@
+{
+  "name": "demorajat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "playwright.test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rbudhiraja/demoRajat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rbudhiraja/demoRajat/issues"
+  },
+  "homepage": "https://github.com/Rbudhiraja/demoRajat#readme",
+  "dependencies": {
+    "playwright": "^1.48.2"
+  }
+}
